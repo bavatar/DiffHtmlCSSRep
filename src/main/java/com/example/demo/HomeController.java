@@ -5,15 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @RequestMapping("/index")
-    public String homePage(){
-        return "index";
-    }
-    // comment the same way you did other java files
-
-    @RequestMapping("/index2")
+    // has the updated css and bootstrap information
+    @RequestMapping("/")
     public String classPage(){
-        return "index2";
+        return "class";
+    }
+
+    // does not have updates
+    @RequestMapping("/original")
+    public String homePage(){
+        return "original";
     }
 
 }
