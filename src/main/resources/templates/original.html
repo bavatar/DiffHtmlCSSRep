@@ -1,6 +1,6 @@
 <!--The original page-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Our Class Webpage</title>
@@ -20,6 +20,8 @@
     }
 </style>
 <body>
+    <div th:insert="base :: navbar"></div>
+
     <!--this is how you comment in HMTL-->
     <h1>Did you find all your tag pairs?</h1>
     <h2>How long did it take us?</h2>

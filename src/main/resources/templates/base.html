@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <div th:fragment="header">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Our Class Webpage</title>
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous" />
+        <!--My CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Belgrano|Flamenco&display=swap" rel="stylesheet">
+    </div>
 </head>
 <body>
-
     <div th:fragment="navbar">
         <ul class="nav">
             <li class="nav-item" id="firstItem">
@@ -22,6 +33,5 @@
             </li>
         </ul>
     </div>
-
 </body>
 </html>

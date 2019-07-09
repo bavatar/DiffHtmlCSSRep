@@ -1,17 +1,8 @@
 <!--The page we created to replicate it-->
 <!DOCTYPE html>
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Our Class Webpage</title>
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous" />
-    <!--My CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <div th:insert="base :: header"></div>
 </head>
 <!--Leave this as a comment: The style information is in a separate file called style.css-->
 
@@ -28,7 +19,8 @@
     <!--}-->
 <!--</style>-->
 <body>
-<div th:insert="base :: navbar"></div>
+    <!-- Navigation bar-->
+    <div th:insert="base :: navbar"></div>
 
 <div class="jumbotron">
     <h1 class="display-4">Did you find all your tag pairs?</h1>
@@ -41,7 +33,7 @@
 <h6>This is my last heading text. Let's go into more fun stuff</h6>
 <br/>
 <p>Here's what we ate in the potluck yesterday</p>
-<ol>
+<ol id="list">
     <li>Lasagna</li>
     <li>Duck Donuts</li>
     <li>Keylime pie</li>
@@ -51,7 +43,8 @@
 </ol>
 <div>
     <hr/>
-    <img src="https://res.cloudinary.com/jihyunle/image/upload/c_scale,h_281,w_604/v1562681606/920x920.jpg" alt="halloween">
+    <img class="bg" src="https://res.cloudinary.com/jihyunle/image/upload/c_scale,h_281,w_604/v1562681606/920x920.jpg" alt="halloween">
+
     <img src="https://assets.bonappetit.com/photos/57d96dd4bf7e91497a10d945/master/w_1200,c_limit/picnic-provence-646.jpg" alt="potluck image">
 </div>
 <a href="https://www.geniuskitchen.com/ideas/summer-potluck-recipes-6357">

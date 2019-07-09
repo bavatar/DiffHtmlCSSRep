@@ -9,11 +9,14 @@ table, th, td {
     border-collapse: collapse;
 }
 
-.nav{
-
+#list{
+    font-family: 'Flamenco', cursive;
 }
 
-#firstItem{
-
+.jumbotron{
+    font-family: 'Belgrano', serif;
 }
 
+img.bg {
+
+}
