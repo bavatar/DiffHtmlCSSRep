@@ -1,6 +1,6 @@
 <!--The page we created to replicate it-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -28,20 +28,7 @@
     <!--}-->
 <!--</style>-->
 <body>
-<ul class="nav">
-    <li class="nav-item" id="firstItem">
-        <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-</ul>
+<div th:insert="base :: navbar"></div>
 
 <div class="jumbotron">
     <h1 class="display-4">Did you find all your tag pairs?</h1>
@@ -64,6 +51,7 @@
 </ol>
 <div>
     <hr/>
+    <img src="https://res.cloudinary.com/jihyunle/image/upload/c_scale,h_281,w_604/v1562681606/920x920.jpg" alt="halloween">
     <img src="https://assets.bonappetit.com/photos/57d96dd4bf7e91497a10d945/master/w_1200,c_limit/picnic-provence-646.jpg" alt="potluck image">
 </div>
 <a href="https://www.geniuskitchen.com/ideas/summer-potluck-recipes-6357">
