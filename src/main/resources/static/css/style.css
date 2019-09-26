@@ -1,9 +1,14 @@
 body {
     background-color: azure;
 }
+
+h1 {
+    color: blue;
+}
 th {
     text-align: left;
 }
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -13,6 +18,9 @@ table, th, td {
     font-family: 'Flamenco', cursive;
 }
 
+div#d1{
+    font-family: 'Mansalva', cursive;
+}
 
 .jumbotron{
     font-family: 'Belgrano', serif;
