@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Our Class Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+    </style>
+<!--    Add Google Fonts-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">-->
+
 
 </head>
 <style>
@@ -14,23 +21,33 @@
     th {
         text-align: left;
     }
+
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
     }
+    /*Import Mansalva Google Font*/
+    /*@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');*/
 </style>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
+    <!--d1 used to map font to Mansalva-->
     <div th:insert="base :: navbar"></div>
 
     <!--this is how you comment in HMTL-->
-    <h1>Did you find all your tag pairs?</h1>
-    <h2>How long did it take us?</h2>
-    <h3>There were 20 something pairs in total</h3>
-    <h6>This is my last heading text. Let's go into more fun stuff</h6>
+    <div>
+        <h1>Did you find all your tag pairs?</h1>
+        <h2>How long did it take us?</h2>
+        <h3>There were 20 something pairs in total</h3>
+        <h6>This is my last heading text. Let's go into more fun stuff</h6>
+    </div>
     <br/>
 
-    <div>
+
+    <!--    font-family: 'Mansalva', cursive;-->
+<!--    <div style="font-family: 'Mansalva', cursive">This Test is in Mansalva Google Font</div>-->
+
+    <div id="d1">
         <p>Here's what we ate in the potluck yesterday</p>
         <ul>
             <li>Lasagna</li>
@@ -38,10 +55,14 @@
             <li>Keylime pie</li>
             <li>Chips</li>
             <li>Dunkin Donuts</li>
-            <li>Drinks</li>
+            <li>Test</li>
+            <li style="font-family: Mansalva"> Drinks in Mansalva</li>;
         </ul>
     </div>
+<!--    <div style="font-family: 'font-familyFont Name', serif;">Your text</div>-->
+    <div style="font-family: 'Malgun Gothic', cursive;">Malgun Text</div>
 
+    <br>
     <hr/>
 
     <img src="https://assets.bonappetit.com/photos/57d96dd4bf7e91497a10d945/master/w_1200,c_limit/picnic-provence-646.jpg">
